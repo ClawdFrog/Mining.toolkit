@@ -169,18 +169,15 @@
             margin-top: 50px;
         }
         
-        .screenshot-placeholder {
-            background: #0f1419;
-            border: 2px dashed #2d3748;
+        .screenshot-img {
+            width: 100%;
             border-radius: 20px;
-            aspect-ratio: 9/19.5;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #4a5568;
-            font-size: 1.2rem;
-            text-align: center;
-            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .screenshot-img:hover {
+            transform: scale(1.02);
         }
         
         /* Support Section */
@@ -328,18 +325,11 @@
             <p class="section-subtitle">Dark mode optimized, offline-first, and designed for harsh mining environments.</p>
             
             <div class="screenshots-grid">
-                <div class="screenshot-placeholder">
-                    Screenshot 1:<br>Home Screen<br>(Add screenshot here)
-                </div>
-                <div class="screenshot-placeholder">
-                    Screenshot 2:<br>Calculators<br>(Add screenshot here)
-                </div>
-                <div class="screenshot-placeholder">
-                    Screenshot 3:<br>Drill Specs<br>(Add screenshot here)
-                </div>
-                <div class="screenshot-placeholder">
-                    Screenshot 4:<br>Mine Gases<br>(Add screenshot here)
-                </div>
+                <img src="Calculators.png" alt="Mining Calculators" class="screenshot-img">
+                <img src="Development Calculators.png" alt="Development Calculators" class="screenshot-img">
+                <img src="Drill specs.png" alt="Drill Specifications" class="screenshot-img">
+                <img src="Ground support calculator.png" alt="Ground Support Calculator" class="screenshot-img">
+                <img src="RPM tools.png" alt="RPM Tools" class="screenshot-img">
             </div>
         </div>
     </section>
