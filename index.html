@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Toolkit Pro - Professional Mining Reference</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #0f1419;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1f2e 0%, #0f1419 100%);
+            color: white;
+            padding: 100px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff6600' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #ff6600 0%, #ff8533 100%);
+            border-radius: 24px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            box-shadow: 0 20px 40px rgba(255, 102, 0, 0.3);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #fff 0%, #a0aec0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            color: #8892b0;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: #ff6600;
+            color: white;
+            padding: 18px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(255, 102, 0, 0.3);
+        }
+        
+        .download-btn:hover {
+            background: #ff7733;
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(255, 102, 0, 0.4);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 100px 0;
+            background: #0f1419;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 20px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #8892b0;
+            margin-bottom: 60px;
+            font-size: 1.1rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: linear-gradient(135deg, #1a1f2e 0%, #151922 100%);
+            border: 1px solid #2d3748;
+            border-radius: 16px;
+            padding: 40px;
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            border-color: #ff6600;
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            color: white;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        
+        .feature-card p {
+            color: #8892b0;
+            line-height: 1.7;
+        }
+        
+        /* Screenshots Section */
+        .screenshots {
+            padding: 100px 0;
+            background: #1a1f2e;
+        }
+        
+        .screenshots-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .screenshot-placeholder {
+            background: #0f1419;
+            border: 2px dashed #2d3748;
+            border-radius: 20px;
+            aspect-ratio: 9/19.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4a5568;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* Support Section */
+        .support {
+            padding: 100px 0;
+            background: #0f1419;
+        }
+        
+        .support-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .support-card {
+            background: #1a1f2e;
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid #2d3748;
+        }
+        
+        .support-card h3 {
+            color: #ff6600;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .support-card p, .support-card li {
+            color: #8892b0;
+            margin-bottom: 10px;
+        }
+        
+        .support-card ul {
+            padding-left: 20px;
+        }
+        
+        .support-card a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        
+        .support-card a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        .footer {
+            padding: 60px 0;
+            background: #0a0d12;
+            text-align: center;
+            color: #4a5568;
+        }
+        
+        .footer a {
+            color: #ff6600;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .screenshots-grid {
+                grid-template-columns: 1fr;
+                max-width: 300px;
+                margin: 50px auto 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="app-icon">⛏️</div>
+                <h1>Mining Toolkit Pro</h1>
+                <p class="tagline">Professional mining calculations, drill specifications, and safety references — all offline, designed for underground use.</p>
+                <a href="#download" class="download-btn">Download on the App Store</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Professional Tools for Underground Mining</h2>
+            <p class="section-subtitle">Everything you need, even when you're 3,000 feet underground with no signal.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧮</div>
+                    <h3>Mining Calculators</h3>
+                    <p>Advanced calculators for drilling, bolting, deviation, mucking, development, and more. Get accurate results for daily mining operations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Drill Specifications</h3>
+                    <p>Complete specifications for Sandvik equipment including longhole drills, jumbos, and bolters. Technical specs always at your fingertips.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📏</div>
+                    <h3>Unit Converter</h3>
+                    <p>Instant metric/imperial conversions. Perfect for international crews and equipment with mixed specifications.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚠️</div>
+                    <h3>Mine Gases Guide</h3>
+                    <p>Comprehensive safety reference for underground gases. Critical information for ventilation and emergency response.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">▶️</div>
+                    <h3>Training Videos</h3>
+                    <p>Video resources for equipment operation and safety procedures. Learn best practices from industry experts.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Multilingual Support</h3>
+                    <p>Full support for English, French, and Spanish. Work in your preferred language or switch for international crews.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots">
+        <div class="container">
+            <h2 class="section-title">Built for the Underground</h2>
+            <p class="section-subtitle">Dark mode optimized, offline-first, and designed for harsh mining environments.</p>
+            
+            <div class="screenshots-grid">
+                <div class="screenshot-placeholder">
+                    Screenshot 1:<br>Home Screen<br>(Add screenshot here)
+                </div>
+                <div class="screenshot-placeholder">
+                    Screenshot 2:<br>Calculators<br>(Add screenshot here)
+                </div>
+                <div class="screenshot-placeholder">
+                    Screenshot 3:<br>Drill Specs<br>(Add screenshot here)
+                </div>
+                <div class="screenshot-placeholder">
+                    Screenshot 4:<br>Mine Gases<br>(Add screenshot here)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support">
+        <div class="container">
+            <h2 class="section-title">Support & Help</h2>
+            <p class="section-subtitle">We're here to help you get the most out of Mining Toolkit Pro.</p>
+            
+            <div class="support-grid">
+                <div class="support-card">
+                    <h3>📚 Frequently Asked Questions</h3>
+                    <ul>
+                        <li><strong>Does it work offline?</strong> Yes! The entire app is designed to work without internet.</li>
+                        <li><strong>What languages are supported?</strong> English, French, and Spanish.</li>
+                        <li><strong>Can I request new calculators?</strong> Absolutely! Contact us with your suggestions.</li>
+                        <li><strong>Is it free?</strong> Yes, Mining Toolkit Pro is free to download and use.</li>
+                    </ul>
+                </div>
+                
+                <div class="support-card">
+                    <h3>📧 Contact Us</h3>
+                    <p><strong>Feature Requests:</strong><br>
+                    Have an idea for a new calculator or feature? Let us know!</p>
+                    <p><strong>Bug Reports:</strong><br>
+                    Found an issue? We want to hear about it.</p>
+                    <p><strong>General Inquiries:</strong><br>
+                    Questions about the app or mining calculations?</p>
+                    <p style="margin-top: 20px;">
+                        <a href="mailto:support@miningtoolkit.app">support@miningtoolkit.app</a>
+                    </p>
+                </div>
+                
+                <div class="support-card">
+                    <h3>🔗 Resources</h3>
+                    <p><a href="#privacy">Privacy Policy</a></p>
+                    <p><a href="#terms">Terms of Use</a></p>
+                    <p><a href="https://github.com/yourusername/mining-toolkit">GitHub Repository</a></p>
+                    <p><a href="#changelog">Version History</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mining Toolkit Pro. All rights reserved.</p>
+            <p style="margin-top: 15px;">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#support">Support</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

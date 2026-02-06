@@ -1,0 +1,18 @@
+Welcome to Mining Toolkit Pro!
+
+Initial release with 6 professional mining modules:
+
+• Mining Calculators - Advanced calculations for drilling, bolting, deviation, mucking & development
+• Drill Specifications - Complete Sandvik equipment specs (longhole, jumbos, bolters)
+• Unit Converter - Instant metric/imperial conversions
+• Mine Gases Guide - Underground gas safety reference
+• Training Videos - Equipment operation & safety resources
+• Multilingual Support - Full app localization in English, French & Spanish
+
+Key Features:
+✓ Works completely offline - perfect for underground use
+✓ Dark mode optimized for low-light environments
+✓ Professional tools built by miners, for miners
+✓ Free to download and use
+
+Download now and take your mining knowledge underground!

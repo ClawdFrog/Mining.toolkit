@@ -1,0 +1,58 @@
+Mining Toolkit Pro
+
+The professional mining reference app designed for underground operations. Built by miners, for miners.
+
+Mining Toolkit Pro puts essential mining calculations, equipment specifications, and safety references right in your pocket — all completely offline. Whether you're operating a jumbo 3,000 feet underground or planning development on the surface, this app has the tools you need.
+
+KEY FEATURES:
+
+🧮 Mining Calculators
+Comprehensive calculators for daily mining operations including drilling calculations, bolting patterns, deviation analysis, mucking estimates, drift development, shotcrete applications, and more. Get accurate results quickly without searching through manuals.
+
+🔧 Drill Specifications  
+Complete technical specifications for Sandvik mining equipment. Access detailed specs for longhole drills, jumbos, bolters, and more. Always know the capabilities and limitations of your equipment.
+
+📏 Unit Converter
+Instantly convert between metric and imperial units. Perfect for international crews and equipment with mixed specifications. No more mental math or conversion tables.
+
+⚠️ Mine Gases Guide
+Comprehensive safety reference for underground gases. Critical information for ventilation planning, gas monitoring, and emergency response. Know the hazards before you encounter them.
+
+▶️ Training Resources
+Access training videos and reference materials for equipment operation and safety procedures. Learn from industry experts and improve your skills.
+
+🌍 Multilingual Support
+Full app localization in English, French, and Spanish. Switch languages instantly or use the app in your preferred language. Perfect for diverse crews and international operations.
+
+🌙 Underground-Optimized Design
+Dark mode interface designed specifically for low-light underground environments. Easy on the eyes during long shifts and night operations.
+
+📱 Works Completely Offline
+No internet? No problem. The entire app is designed to work without connectivity. All calculations, specs, and references are stored locally on your device. Perfect for remote mine sites and deep operations.
+
+WHO IS THIS FOR?
+
+• Jumbo Operators
+• Longhole Drill Operators  
+• Development Miners
+• Production Miners
+• Mine Supervisors
+• Mine Engineers
+• Safety Officers
+• Training Coordinators
+
+SUPPORTED EQUIPMENT:
+
+Access specifications for Sandvik equipment including:
+• DD Series: DD210, DD322i, DD421, DD422i, DD422iE
+• DL Series: DL421, DL422i, DL432i
+• DS Series: DS311, DS312, DS411, DS412i, DS422i
+• And more...
+
+PRIVACY:
+
+Mining Toolkit Pro respects your privacy. The app works entirely offline and does not collect or transmit any personal data. Your calculations and usage stay on your device.
+
+Download Mining Toolkit Pro today and take your mining knowledge underground.
+
+Note: Always follow your mine's safety procedures and consult official equipment manuals for critical operations. This app is a reference tool and should be used in conjunction with proper training and supervision.
